@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+  height: 70px;
+  padding: 15px;
+}
+
+/* White background when scrolling */
+.navbar.scrolled {
+  background-color: #fff !important;
+}
+
+/* Change color on scroll */
+.navbar.scrolled .nav-link {
+  color: black !important;
+}
+.navbar.scrolled .navbar-brand {
+  color: #e81050 !important;
+}
+
+/* Underline color change on scroll */
+
+.navbar.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: white !important;
+}
+
+.nav-item {
+  padding: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 18px;
+  color: white !important;
+}
+
+.nav-item .nav-link:hover {
+  color: #e81050 !important;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.mainheading {
+  font-weight: bolder;
+  font-size: 48px;
+  margin-top: 70px;
+}
+.mainpara {
+  font-size: 16px;
+}
+
+.btn1 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #e81050;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn2 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #505288;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.bigimage {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+  margin-left: 40px;
+  object-fit: cover;
+}
+.text {
+  font-size: 20px;
+}
+.img-box {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  transform: translateY(-50%);
+  background-color: #e81050;
+  height: 400px;
+  max-width: 560px;
+  padding: 60px;
+  color: white;
+}
+.img1 {
+  height: 400px;
+  width: 100%;
+}
+.heading1 {
+  color: #e81050;
+  font-weight: bold;
+  margin-top: 180px !important;
+}
+.blogheading1 {
+  color: #e81050;
+}
+.card-body {
+  background-color: #f0f0f0;
+}
+.spacing {
+  margin: 100px;
+}
+.heading2 {
+  color: #e81050;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.card-para1 {
+  font-size: 22px;
+  padding-left: 50px;
+}
+.card-para2 {
+  font-size: 18px;
+  padding-left: 50px;
+}
+.btn3 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #e81050;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+.text-black {
+  color: #000 !important;
+}
+
+.text {
+  color: #e81050 !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.bgcolor {
+  background-color: #f8f9fa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.icons {
+  width: 50px; /* Adjust icon size as needed */
+  height: auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.me-3 {
+  margin-right: 1rem; /* Adds space between the icon and text */
+}
+#carouselExampleCaptions .carousel-inner img {
+  max-height: 500px; /* Adjust this value as needed */
+  object-fit: cover;
+}
+.card-link {
+  color: #e81050;
+}
+.heading3 {
+  color: #e81050;
+}
+.card {
+  background-color: transparent;
+}
+.spacingbottom {
+  margin-bottom: 150px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.carousel-container1 {
+  width: 500px; /* Set desired width */
+  height: 300px; /* Set desired height */
+  overflow: hidden; /* Hide any overflow */
+}
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: darkblue;
+  outline: none;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.first-name,
+.last-name {
+  flex: 1;
+}
+
+.formbackground {
+  background-color: white; /* Your chosen background color */
+  padding: 20px; /* Add padding within the form */
+  margin-bottom: 20px; /* Space between form and footer */
+}
+.carousel-container2 {
+  width: 500px; /* Set desired width */
+  height: 300px; /* Set desired height */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.carousel-inner img {
+  width: 100%; /* Make images fit the container width */
+  height: 100%; /* Make images fit the container height */
+  object-fit: cover; /* Adjusts the image to fill the space without stretching */
+}
+.col-lg-3 ul li {
+  list-style: none;
+}
+.field {
+  background: transparent !important;
+}
+::placeholder {
+  color: white;
+}
+footer {
+  padding: 60px;
+}
+.image-container {
+  position: relative;
+}
+
+.card-img-top {
+  transition: 0.3s;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon {
+  color: #fff;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Show icons on hover */
+.image-container:hover .social-icons {
+  opacity: 1;
+}
+
+.image-container:hover .card-img-top {
+  opacity: 0.8;
+}
+.social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+  background-color: #e81050;
+}
+
+.social-icons a:hover {
+  color: black; /* Darker shade on hover */
+  background-color: #e81050;
+}
+/* Media Queries*/
+@media only screen and (max-width: 1399px) {
+  .custom-img {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .img-box {
+    left: 32%;
+  }
+  .carousel-item {
+    right: 38px !important;
+  }
+  .heading1 {
+    margin-top: 180px !important;
+  }
+  .custom-img {
+    height: 700px;
+    padding: 0;
+  }
+
+  .carousel-container1 {
+    width: 500px; 
+    height: 300px; 
+    overflow: hidden; 
+  }
+}
+
+@media (max-width: 992px) {  
+  .navbar-nav {
+      margin-top: 20px;  /* Add some space from the top */
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .navbar-nav {
+        margin-top: 20px;  }
+    
+  .bigimage {
+    margin-left: 10px;
+  }
+  .img-box {
+    left: 15%;
+  }
+
+  .mainheading {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 5px !important;
+  }
+  .mainpara {
+    font-size: 13px;
+  }
+  .custom-img {
+    height: 700px;
+  }
+  .carousel-container1 {
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .carousel-container2 {
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .heading1 {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .img-box {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .heading2 {
+    font-size: 30px;
+    margin-left: 0px !important;
+    margin-right: 0 !important;
+    justify-content: start;
+    align-items: start;
+  }
+  .container .ms-5 {
+    margin-left: 0 !important;
+  }
+  .carousel-container1 {
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .carousel-container2 {
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+}
+
+
+@media only screen and (max-width: 575px) {
+  .container .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+  }
+  .row {
+    margin-left: 0;
+
+    overflow: hidden;
+    margin-right: 0;
+  }
+  .heading2 {
+    font-size: 30px;
+  }
+  .custom-img {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .container .ms-5 {
+    margin-left: 0 !important;
+  }
+  .carousel-container1 {
+    width: 550px; /* Set desired width */
+    height: 300px; /* Set desired height */
+    overflow: hidden; /* Hide any overflow */
+    margin-left: 20px;
+  }
+  .img-box {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    z-index: 2;
+  }
+  .bigimage {
+    width: 490px;
+  }
+}
